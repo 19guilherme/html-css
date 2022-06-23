@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudos-classes</title>
+    <style>
+        
+        body{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div{
+            display: inline-block;
+            background-color: rgb(84, 96, 118);
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+            margin-bottom: 20px;
+            }
+
+        div:hover{
+            background-color: rgb(215, 197, 6);
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudos-classes</h1>
+
+    <div>
+        01
+        <!--A tag "div" faz o agrupamento de elementos a nível de bloco e a tag "span" é a nível de linha-->
+    </div>
+    <div>02</div>
+    <div>03</div>
+
+    <p>
+        Uma <strong>pseudo-classe CSS</strong> é uma palavra-chave adicionada às declarações de um seletor
+        após um sinal de dois pontos e especificam um estado especial de um elemento.
+        Existem várias pseudo-classes para estilos, podemos
+        citar <strong>:hover, :visited, :active, :checked, :empty e :focus.</strong>
+    </p>
+    <p>
+        Já um <strong>pseudo-elemento CSS</strong> é uma palavra-chave adicionada às declarações de um
+        seletor após dois sinais de dois pontos e permitem que você formate um pedaço
+        específico do elemento referenciado. Os principais pseudo-elementos usados nas CSS
+        são <strong>::before, ::after, ::first-letter, ::first-line.</strong> 
+    </p>
+    <hr>
+
+
+    <h2>SELETORES PERSONALIZADOS</h2>
+            <p>#  = id</p>
+            <p>.  = classe</p>
+            <p>:  = pseudo-classe</p>
+            <p>:: = pseudo-elemento</p>
+            <p>>  = children</p>
+
+
+
+</body>
+</html>

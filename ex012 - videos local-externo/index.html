@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este video está hospedado no meu próprio servidor.</p>
+    
+    <!--
+        Quando adicionar vídeos, modificar o tamanho deles usando "width"-"heigt", 
+        "controls" - irá adicionar os controles e 
+        "poster" irá dar uma capa pra o vídeo.
+        "autoplay" - Ao carregador o site o vídeo iniciará automaticamente.
+        "loop" - quando o vídeo acabar, ele iniciará novamente.
+    -->
+    <video width="560" poster="imagens/.png" controls loop>
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-Video.m4v" type="video/mp4">
+        <source src="midia/meu-Video.webm" type="video/webm">
+        <source src="midia/meu-video.ogv" type="video/ogg">
+    </video>
+
+    <!--
+        Assim como áudios, para cada navegador tende à ter seus formatos. Por via das dúvidas, colocar todos os formatos. OBS: Vídeos hospedado localmente, custa caro para hospedar site.
+    -->
+
+
+    <h1>Inserindo vídeos do Yotube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zrIfhUVB_3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!--
+        Para adicionar vídeos do youtube, escolha o vídeo desejado, clica em COMPARTILHAR, clica em "imcorporar". Irá abrir uma página de configurações e um link copiavel. Basta copiar e colar no documento HTML.
+    -->
+
+    <h1>Inserindo viídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/457362684?h=8ccfce332a&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+
+</body>
+</html>

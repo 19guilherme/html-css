@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas e fontes nas imagens</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+        @font-face {
+            font-family:'love';
+            src: url('fonts/love larry ttf.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+
+            /*
+                Tipos de format()
+                - opentype(otf)
+                - truetype(ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanced Typography)
+                - svg
+            */
+
+            /* OBS: COLOCAR O NOME CONFORME O "NOME", COM ESPAÇO, PONTO, VIRGULA. */
+
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            font-family: 'love', Times, serif;
+            font-size: 2.5em; /* UTILIZA O VALOR DE 3X DO TAMANHO DA FONTE PADRAO(3*16=48PX) */
+            font-weight: lighter;
+        }
+
+        .titulo{
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5em;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Título com Fontes Externas</h1>
+    <h2>Site dafont.com</h2>
+    <p>Baixar o arquivo desejado,<br> depois "EXTRAIR" arquivo,<br> criar pasta para fonts no aqruivo "geral do site". <br> <strong>Colocar todas informação conforme descrito à cima. (style)</strong> </p>
+
+    <h1 class="titulo">Detectando fontes dentro de Imagens</h1>
+    <p>WhatsFontis, FontSquirrel.com, MyFonts.com</p>
+    
+</body>
+</html>

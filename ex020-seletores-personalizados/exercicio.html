@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudos-classes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1,h2{
+            text-align: center;
+        }
+ 
+        img{
+            width: 150px;
+            width: 150px;
+        }
+
+
+        div > img{ /* Só a imagem filha da div ficará oculta */
+            display: none;
+        }
+
+        div:hover{
+            color: blue;
+            font-weight: 700;
+        }
+
+
+        div:hover > img{
+            display:block ;
+        }
+
+        img:hover{
+            width: 200px;
+        }
+
+        li{
+            list-style: none;
+            text-align: right;
+            margin: 5px 15px;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold; /* 700 ou bold */
+            
+        }
+
+        a:hover{
+            color: rgb(235, 216, 13);
+            background-color: black;
+            text-decoration: underline;
+        }
+
+        .seta::before{
+            content: '☞';
+
+        }
+
+        .seta::after{
+            content: '☜';
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Veja a mágica acontecer</h1>
+    <h2>Passe o mouse no paragrafo abaixo...</h2>
+    <div>
+        <p class="especial"><strong>Passe o mouse aqui.</strong></p>
+        <img src="surpresa.jpg" alt="imagem de surpresa">
+    </div>
+
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/" target="_blank">Repositório do GitHub</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank">Página do Linkedin</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" class="seta">Sites Diversos</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixa</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        h3{
+            color: blue;
+            border-bottom: 2px solid blue;
+            text-align: center;
+
+        }
+
+        div{
+            background-color: rgb(89, 140, 140);
+            padding: 10px;
+            margin: 20px 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Modelo de caixa</h1>
+    <p>Conjunto de caixas chama-se  "aninhamento"</p>
+
+    <h2>Tipos de Caixa</h2>
+    <div>
+        <h3>Box-level</h3>
+        <p>Irá ocupar 100% da largura da tela (100vh - viewport)</p>
+        <p>Exemplo: &lt;div&gt; ocupa 100vh(100vh - viewport)</p>
+        <p>A tag <strong>"div"</strong> faz o agrupamento de elementos a nível de bloco</p>
+
+        <p><strong>address, article, aside, blockquote, canvas, dd, div, dl, dt, fieldset, figcaption, figure, footer, form, h1-h6, header, hr, li, main, nav, nosccript, ol, ul, p, pre, section, table, tfoot, video, ...</strong></p>
+    </div>
+
+
+   <div>
+        <h3>Inline-level</h3>
+        <p>Irá ocupar só o espaço do conteúdo interno.</p>
+        <p>Exemplo: &lt;span&gt; expansão de código, não quebra linha.</p>
+        <p>A tag <strong>"span"</strong> é a nível de linha </p>
+
+        <p><strong>a, abbr, acronym, b, bdo, br, button, cite, code, dfn, em, i, img, input, kbd, label, map, object, output, q, samp, script, select, small, span, strong, sub, textarea, tt, var, ...</strong></p>
+   </div>
+
+</body>
+</html>

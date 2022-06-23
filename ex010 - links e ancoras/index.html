@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e Ancoras</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://github.com/gustavoguanabara" target="_blank" rel="external">repositório público no GitHub</a></p>
+
+    <p>Você também pode acessar o meu <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" rel="external">canal gratuito no youtube</a>.</p>
+
+    <!--
+        href - Para onde o site vai
+        target - Controla onde o site de destino vai abrir.
+            _blank - vai abrir o link em uma nova janela.
+            _self - vai abrir o link na mesma janela (padrão)
+
+        rel - Recurso para links, que indica qual a natureza do destino usado, (mecanismo de busca do GOOGLE)
+            next - indica que o link é para a próxima parte do documento atual
+            prev - indica que o link é para a parte anterior do documento atual
+            author - indica que é um link para o site do autor do artigo atual
+            external - indica que é um link para outro site que não faz parte do site
+          ->nofollow - não dá o aval ou autorização para o mecanismo de buscas do google.
+    -->
+
+    <h1>Links Internos</h1>
+    <p>Esta é o primeira página do site. Se voce quiser, pode acessar também as minha outras páginas.</p>
+    <p><a href="rede-social/redes-sociais.html" rel="next">Redes Sóciais</a> e <a href="page002.html" rel="next">outros assuntos.</a></p>
+
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/meulivro.zip" download="meulivro.zip" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+
+        <!--
+            Dependendo do navegador utlizado, usar o "download="nome-arquivo", type="application/pdf-zip"" para forçar o download.
+        -->
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Imagem flexivel</title>
+</head>
+<body>
+    <h1>Imagem flexivel</h1>
+    <p>Confrome aumentamos e diminuímos a página, as fotos mudará conforme o tamanho.</p>
+
+    <picture>
+        <source media="(max-width:550px )" srcset="imagens/foto-pp.png" type="image/png">
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:950px )" srcset="imagens/foto-mm.png" type="image/png">
+        <source media="(max-width:1150px )" srcset="imagens/foto-m.png" type="image/png">
+        <source media="(max-width:1300px )" srcset="imagens/foto-g.png" type="image/png">
+        <img src="imagens/foto-gg.png" alt="imagem flexivel">
+    </picture>
+
+    <h1> A natureza é <STRONG>MARAVILHOSA</STRONG> ! </h1>
+    <p>Como não se apaixonar com tanta beleza, cada lado que olhamos nós se apaixonamos mais.</p>
+    <p>Curta uma música enquanto admira minhas imagens</p>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midia/Billy_Joel_-_Vienna_Legendado_Fil_(getmp3.pro).mp3" type="audio/mpeg">
+        <source src="midia/Billy_Joel_-_Vienna_Legendado_Fil_(getogg.pro).ogg" type="audio/ogg">
+        <source src="midia/Billy_Joel_-_Vienna_Legendado_Fil_(getwav.pro).wav" type="audio/wav">
+
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/Billy_Joel_-_Vienna_Legendado_Fil_(getmp3.pro).mp3">Clique para baixar o arquivo MP3</a></p>
+
+    </audio>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+           background-color: rgb(136, 133, 143); 
+           font-family: Arial, Helvetica, sans-serif;
+           margin: 0;
+        }
+
+        .page{
+            max-width: 980px;
+            margin: auto;  
+        }
+
+        header{
+            background-color: rgb(42, 172, 128);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        nav{
+            background-color: rgb(10, 134, 95);
+        }
+        h1{
+            color: rgb(7, 75, 53);
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+
+        a:hover{
+            color: rgb(7, 75, 53);
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: rgb(10, 134, 95);
+            display: flex;
+            padding: 20px;
+
+        }
+
+        h2{
+            color: rgb(7, 75, 53);
+        }
+
+        main > aside{
+            background-color: white;
+            width: 90%;
+            margin-left: 10px;
+            padding: 10px;
+        }
+
+        section{
+            background-color: white;
+            margin-right: 10px;
+            text-align: center;
+            border-radius: 15px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 10px;
+
+        }
+
+        article{
+            background-color: rgb(42, 172, 128);
+            border-radius: 15px;
+            box-shadow: 2px 2px 5px rgb(136, 133, 143);
+            display: flex;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            margin: 10px;
+        }
+
+        article.section-lat{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        button{
+            background-color: rgb(136, 133, 143);
+            border: 2px solid white;
+            border-radius: 10px;
+
+        }
+
+        button a{
+            color: rgb(7, 75, 53);
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        button:hover{
+            background-color: rgb(7, 75, 53);
+
+        }
+
+        a:hover{
+            color: white;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        aside{
+            border-radius: 15px;
+        }
+
+        aside > h2{
+            background-color: rgb(42, 172, 128);
+            text-align: end;
+            padding:2px 5px
+        }
+        
+        footer{
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>Treinando Semântica</h1>
+            <nav>
+                <a href="#">Página 01</a>
+                <a href="#">Página 02</a>
+                <a href="#">Página 03</a>
+                <a href="#">Página 04</a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <article>
+                    <h2>Artigo</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde distinctio doloremque cumque magnam velit sequi eveniet recusandae? Labore hic in, aspernatur laboriosam aliquam eveniet ad aliquid nesciunt doloribus autem cupiditate?</p>
+                </article>
+                <article class="section-lat">
+                    <section>
+                        <h2>Artigo 02</h2>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia reprehenderit quo vitae labore commodi modi cupiditate atque dolor, porro ipsa rerum molestias unde itaque, numquam perferendis suscipit iusto laudantium? Officiis?]</p>
+                         <p>Escrito pelo Guilherme</p>
+                    </section>
+                    <section>
+                        <button>
+                            <a href="#">Clique aqui
+                                <img src="favicon.ico" alt=""></a>
+                        </button>
+                    </section>
+                </article>
+            </section>
+    
+            <aside>
+                <h2>Aside</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At facere deserunt aliquid maxime. Laboriosam ea fuga nisi expedita quos hic sit aut. Eveniet veritatis reprehenderit voluptate nobis? Repellendus, pariatur odit?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam voluptas incidunt reiciendis perspiciatis aspernatur illum voluptatibus. Ratione alias quod commodi tempora necessitatibus ipsam eos exercitationem voluptates deleniti, odio incidunt dolore.</p>
+            </aside>
+
+            
+        </main>
+        <footer>
+            <p>Criado e Escrito por <q>Guilherme Josué do Nascimento</q></p>
+        </footer>
+    </div>
+</body>
+</html>

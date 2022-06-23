@@ -1,0 +1,225 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+body{
+  background-color: #E4DFDA;
+  font-size: 16px;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #080705;
+}
+.navegacao{
+  width: 950px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 25px;
+}
+
+.navegacao img{
+  border-radius: 50%;
+  width: 130px;
+}
+
+ul{
+  display: flex;
+}
+
+li,a{
+  margin-left: 10px;
+  color: #eebf51;
+  font-weight: 700;
+}
+
+a:hover{
+  text-decoration: underline 2px;
+  padding-top: 10px;
+}
+
+.text{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 950px;
+  text-align: justify;
+  padding: 25px;
+  
+}
+
+h1{
+  text-align: center;
+  color: #648381;
+  text-shadow: 2px 2px rgb(195, 187, 183);
+  margin-bottom: 15px;
+}
+
+p{
+  color: #142d2b;
+  text-indent: 10px;
+  margin-bottom: 5px;
+
+}
+
+
+.principal{
+  display: flex;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   
+}
+
+.caixa-media{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 950px;
+  padding: 25px;
+}
+
+.caixa{
+  background-color: #648381;
+  text-align: center;
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 20px;
+  margin-left: 0;
+}
+
+
+.ultimo{
+  margin-right: 0;
+}
+
+h2{
+  text-transform: uppercase;
+  color: #eebf51;
+  margin-bottom: 15px;
+}
+
+.caixa p{
+  margin-bottom: 20px;
+}
+.caixa  img{
+  height: 150px;
+  margin: 0px;
+}
+
+
+
+.caixa .button{
+  background-color: #D4E09B;
+  border: none;
+  padding: 5px;
+  width: 50%;
+  text-align: center;
+  margin-top: 15px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.caixa  a{
+  color: #080705;
+  font-weight: bolder;
+}
+
+.button:hover{
+  background-color: #eebf51;
+  text-decoration: none;
+}
+
+.button a:hover{
+  text-decoration: none;
+  padding: 0;
+}
+
+footer{
+  text-align: center;
+  background-color: #D4E09B;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.footer{
+  width: 1000px;
+  text-align: center;
+  margin: 25px;
+}
+
+
+@media screen and (max-width: 950px) {
+   body{
+     font-size: 14px;
+   }
+
+   .navegacao img{
+     width: 100px;
+   }
+   .caixa  img{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 850px){
+  .caixa  img{
+    display: block;
+    width: 70%;
+    margin: 10px auto;
+  }
+  
+  .ultimo{
+    display: none; 
+  }
+
+  .caixa{
+    width: 50%;
+    margin: 0px 10px ;
+  }
+
+  .caixa a{
+    font-weight: lighter;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .caixa-media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .caixa{
+    width: 95%;
+    margin: 20px;
+  }
+}
+
+  /* Colocar menu hamburguer css */
+
